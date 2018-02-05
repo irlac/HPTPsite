@@ -1,0 +1,95 @@
+.header {
+    background-color:#282828;
+    padding: 1em 0em;
+    position: relative;
+}
+
+.top-nav {
+    text-align: center;
+    background-color: #808080; 
+} 
+nav.navbar-default {
+    background-color: inherit;
+    border: none;
+    margin: auto;
+}	
+ul.nav.navbar-center li {
+    display: inline-block;
+}
+.navbar-default > li > a:hover, .navbar-default > li > a:focus, .navbar-default li a.active {
+    color: #808080;
+    background-color:#ffffff;
+}
+.top-nav ul li a {
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+    padding: 1.5em 2em;
+	color:#fff;
+	font-weight: 200;
+}
+.top-nav ul li a:hover, .top-nav ul li a:focus {
+    outline: none;
+    background:#fff;
+    color: #808080;
+}
+ /* Dropdown Button */
+.dbtn {
+    background-color:dimgrey;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.ddown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.ddown-content {
+    display: none;
+    position: fixed;
+    background-color:#282828;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.ddown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.ddown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu on hover */
+.ddown:hover .ddown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.ddown:hover .dbtn {
+    background-color:#1E1E1E;
+} 
+@media(max-width:1080px){
+.top-nav ul li a { 
+    padding: 1.2em 2em; 
+}
+} 
+@media(max-width:991px){
+.top-nav ul li a {
+    padding: 1.1em 1.8em;
+}
+}
+@media(max-width:800px){
+.header { 
+    padding: 1em 0; 
+}
+}
